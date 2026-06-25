@@ -1,0 +1,15 @@
+.gh-head{display:flex;gap:16px;align-items:flex-start}
+.gh-av{width:72px;height:72px;border-radius:50%;object-fit:cover;border:2.5px solid var(--bd2);background:var(--s3);flex-shrink:0}
+.gh-info{flex:1;min-width:0}
+.gh-name{font-size:18px;font-weight:800;font-family:var(--display);color:var(--t1)}
+.gh-login{font-size:11px;color:var(--t3);margin-top:2px}
+.gh-bio{font-size:12px;color:var(--t2);margin-top:7px;line-height:1.55}
+.gh-loc{font-size:11px;color:var(--t3);margin-top:5px}
+.gh-stats{display:flex;margin-top:14px;background:var(--s2);border:1px solid var(--bd);border-radius:var(--r3);overflow:hidden}
+.gh-stat{flex:1;text-align:center;padding:10px 6px;border-right:1px solid var(--bd)}
+.gh-stat:last-child{border-right:none}
+.gh-sv{font-size:18px;font-weight:700;font-family:var(--display);background:linear-gradient(135deg,#fff 30%,var(--acc));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.gh-sl{font-size:9px;color:var(--t4);text-transform:uppercase;letter-spacing:.1em;margin-top:2px}
+.gh-langs{display:flex;flex-wrap:wrap;gap:5px;margin-top:12px}
+.gh-lang{font-size:10px;padding:3px 10px;border-radius:99px;background:var(--s2);border:1px solid var(--bd);color:var(--t2);display:flex;align-items:center;gap:5px}
+.gh-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}

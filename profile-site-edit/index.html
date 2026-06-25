@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="description" content="My personal profile"/>
+<title>ketome</title>
+<link rel="icon" type="image/png" href="assets/favicon.jpeg"/>
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg"/>
+<link rel="manifest" href="manifest.json"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/reset.css"/>
+<link rel="stylesheet" href="css/variables.css"/>
+<link rel="stylesheet" href="css/base.css"/>
+<link rel="stylesheet" href="css/background.css"/>
+<link rel="stylesheet" href="css/panel.css"/>
+<link rel="stylesheet" href="css/discord.css"/>
+<link rel="stylesheet" href="css/spotify.css"/>
+<link rel="stylesheet" href="css/github.css"/>
+<link rel="stylesheet" href="css/links.css"/>
+<link rel="stylesheet" href="css/badges.css"/>
+<link rel="stylesheet" href="css/skeleton.css"/>
+<link rel="stylesheet" href="css/toast.css"/>
+<link rel="stylesheet" href="css/cursor.css"/>
+<link rel="stylesheet" href="css/effects.css"/>
+<link rel="stylesheet" href="css/animations.css"/>
+<link rel="stylesheet" href="css/themes.css"/>
+<link rel="stylesheet" href="css/err.css"/>
+<link rel="stylesheet" href="css/responsive.css"/>
+<link rel="stylesheet" href="animations/entrance.css"/>
+<link rel="stylesheet" href="animations/hover.css"/>
+<link rel="stylesheet" href="animations/loading.css"/>
+</head>
+<body>
+
+<div class="bg-wrap">
+  <div class="bg-grid"></div>
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="orb orb3"></div>
+</div>
+
+<main class="stack" id="app">
+
+  <!-- ① Discord -->
+  <div class="panel fade-in" id="panel-discord">
+    <div class="panel-body">
+      <div class="lbl"><span class="lbl-icon">🔵</span> Discord</div>
+      <div id="dc-content">
+        <div class="sk-row">
+          <div class="sk sk-circle" style="width:66px;height:66px;flex-shrink:0"></div>
+          <div class="sk-lines">
+            <div class="sk" style="width:55%;height:15px"></div>
+            <div class="sk" style="width:35%;height:10px"></div>
+            <div class="sk" style="width:45%;height:10px"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ② Spotify -->
+  <div class="panel fade-in" id="panel-spotify" style="animation-delay:.08s">
+    <div class="panel-body">
+      <div class="lbl"><span class="lbl-icon" style="color:#1ed760">♫</span> Spotify · Now Playing</div>
+      <div id="sp-content">
+        <div class="sk-row">
+          <div class="sk" style="width:60px;height:60px;border-radius:10px;flex-shrink:0"></div>
+          <div class="sk-lines">
+            <div class="sk" style="width:70%;height:13px"></div>
+            <div class="sk" style="width:50%;height:10px"></div>
+            <div class="sk" style="width:55%;height:10px"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ③ GitHub (shows only if configured) -->
+  <div class="panel fade-in" id="panel-github" style="animation-delay:.14s;display:none">
+    <div class="panel-body">
+      <div class="lbl"><span class="lbl-icon">🐙</span> GitHub</div>
+      <div id="gh-content"></div>
+    </div>
+  </div>
+
+  <!-- ④ Skills -->
+  <div class="panel fade-in" id="panel-skills" style="animation-delay:.20s">
+    <div class="panel-body">
+      <div class="lbl"><span class="lbl-icon">⚡</span> Skills</div>
+      <div id="badges-content" class="badges-wrap"></div>
+    </div>
+  </div>
+
+  <!-- ④.5 Socials Row -->
+  <div class="panel fade-in" id="panel-socials" style="animation-delay:.22s">
+    <div class="panel-body">
+      <div class="lbl"><span class="lbl-icon">🌐</span> Socials</div>
+      <div class="socials-wrap" id="socials-row"></div>
+    </div>
+  </div>
+
+  <!-- ⑤ Links -->
+  <div class="panel fade-in" id="panel-links" style="animation-delay:.26s">
+    <div class="panel-body">
+      <div class="lbl"><span class="lbl-icon">🔗</span> Links</div>
+      <div id="links-content" class="links-grid"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div style="text-align:center;padding:10px 0;font-size:10px;color:var(--t4)">
+    <span id="clock"></span> · <a href="pages/about.html" style="color:var(--t3);transition:color .2s" onmouseover="this.style.color='var(--acc)'" onmouseout="this.style.color='var(--t3)'">About</a>
+    · <a href="https://discord.gg/juraa" style="color:var(--t3);transition:color .2s" onmouseover="this.style.color='var(--acc)'" onmouseout="this.style.color='var(--t3)'">myworld</a>
+  </div>
+
+</main>
+
+<!-- Theme button -->
+<button id="theme-btn" title="Switch Theme" style="position:fixed;bottom:20px;right:20px;z-index:100;width:42px;height:42px;border-radius:50%;background:var(--s2);border:1px solid var(--bd2);color:var(--t2);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s" onmouseover="this.style.borderColor='var(--acc)'" onmouseout="this.style.borderColor='var(--bd2)'">🎨</button>
+
+<script src="config/constants.js"></script>
+<script src="config/profile.js"></script>
+<script src="config/theme.js"></script>
+<script src="utils/helpers.js"></script>
+<script src="utils/dom.js"></script>
+<script src="utils/storage.js"></script>
+<script src="utils/events.js"></script>
+<script src="utils/toast.js"></script>
+<script src="utils/cursor.js"></script>
+<script src="api/lanyard.js"></script>
+<script src="api/github.js"></script>
+<script src="api/steam.js"></script>
+<script src="api/spotify.js"></script>
+<script src="js/discord.js"></script>
+<script src="js/spotify.js"></script>
+<script src="js/github.js"></script>
+<script src="js/links.js"></script>
+<script src="js/socials.js"></script>
+<script src="js/badges.js"></script>
+<script src="js/background.js"></script>
+<script src="js/effects.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/clock.js"></script>
+<script src="js/counter.js"></script>
+<script src="js/app.js"></script>
+
+<script>
+// Register service worker
+if("serviceWorker" in navigator) {
+  window.addEventListener("load", ()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));
+}
+// Show GitHub panel if configured
+if(PROFILE.github) document.getElementById("panel-github").style.display = "";
+</script>
+<audio id="bg-music" loop preload="auto" style="display:none">
+  <source src="assets/welcome.mp3" type="audio/mpeg">
+</audio>
+<button id="music-toggle" style="position:fixed;bottom:80px;right:20px;z-index:100;width:42px;height:42px;border-radius:50%;background:var(--s2);border:1px solid var(--bd2);color:var(--t2);font-size:18px;cursor:pointer;">🔊</button>
+</body>
+</html>

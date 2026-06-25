@@ -1,0 +1,5 @@
+const CACHE="profile-v1";
+const STATIC=["/","index.html","css/reset.css","css/variables.css","css/base.css","css/background.css","css/panel.css","css/discord.css","css/spotify.css","css/links.css","css/badges.css","css/skeleton.css","css/animations.css","config/profile.js","config/constants.js","utils/helpers.js","utils/dom.js","api/lanyard.js","js/discord.js","js/spotify.js","js/links.js","js/app.js","assets/favicon.svg"];
+self.addEventListener("install",e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(STATIC)).then(()=>self.skipWaiting())));
+self.addEventListener("activate",e=>e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
+self.addEventListener("fetch",e=>{if(e.request.method!=="GET")return;e.respondWith(caches.match(e.request).then(cached=>{if(cached)return cached;return fetch(e.request).then(res=>{if(!res||res.status!==200||res.type!=="basic")return res;const clone=res.clone();caches.open(CACHE).then(c=>c.put(e.request,clone));return res;}).catch(()=>caches.match("index.html"))}))});

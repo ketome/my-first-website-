@@ -1,0 +1,8 @@
+html,body{height:100%}
+body{font-family:var(--mono);background:var(--bg);color:var(--t1);min-height:100vh;
+  display:flex;align-items:center;justify-content:center;padding:28px 16px;position:relative;overflow-x:hidden}
+.stack{position:relative;z-index:1;width:100%;max-width:420px;display:flex;flex-direction:column;gap:9px}
+::selection{background:rgba(88,101,242,.35);color:var(--t1)}
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--acc);border-radius:2px}

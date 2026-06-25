@@ -1,0 +1,6 @@
+.toast-wrap{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;gap:8px;z-index:9998;align-items:center;pointer-events:none}
+.toast{display:inline-flex;align-items:center;gap:8px;padding:9px 18px;background:var(--s2);border:1px solid var(--bd2);border-radius:99px;font-size:12px;color:var(--t1);font-family:var(--mono);pointer-events:auto;transform:translateY(12px);opacity:0;transition:all .25s}
+.toast.toast-in{transform:translateY(0);opacity:1}
+.toast-success{border-color:rgba(35,229,122,.35)}
+.toast-error{border-color:rgba(255,68,85,.35)}
+.toast-warning{border-color:rgba(245,166,35,.35)}

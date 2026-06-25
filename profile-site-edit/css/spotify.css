@@ -1,0 +1,14 @@
+.sp-row{display:flex;gap:14px;align-items:center}
+.sp-cov{width:60px;height:60px;border-radius:10px;object-fit:cover;background:var(--s3);flex-shrink:0;border:1px solid rgba(255,255,255,.06)}
+.sp-info{flex:1;min-width:0}
+.sp-name{font-size:13px;font-weight:700;color:var(--t1);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sp-art{font-size:11px;color:var(--t2);margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sp-alb{font-size:10px;color:var(--t3);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sp-bars{display:flex;align-items:flex-end;gap:2px;height:20px;flex-shrink:0}
+.sp-bar{width:3px;border-radius:2px;background:var(--spt);animation:spBar .65s ease infinite alternate}
+@keyframes spBar{from{transform:scaleY(.18)}to{transform:scaleY(1)}}
+.sp-prog{margin-top:11px}
+.sp-track{height:3px;background:var(--s3);border-radius:99px;overflow:hidden}
+.sp-fill{height:100%;background:var(--spt);border-radius:99px;transition:width .5s linear;width:0%}
+.sp-times{display:flex;justify-content:space-between;font-size:9px;color:var(--t3);margin-top:4px}
+.sp-idle{text-align:center;padding:16px;font-size:12px;color:var(--t3)}

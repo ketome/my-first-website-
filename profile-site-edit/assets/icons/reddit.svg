@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <rect width="24" height="24" rx="6" fill="#ff4500" opacity=".18"/>
+  <circle cx="12" cy="12" r="7" fill="#ff4500" opacity=".85"/>
+  <text x="12" y="16" font-size="8" text-anchor="middle" fill="white" font-family="monospace" font-weight="bold">RE</text>
+</svg>

@@ -1,0 +1,77 @@
+/* الـ row الرئيسي — flex-start عشان الشارات ما تتقطع */
+.dc-row{display:flex;gap:14px;align-items:flex-start}
+
+.dc-avw{
+  position:relative;
+  flex-shrink:0;
+  width:80px;height:80px;
+  display:flex;align-items:center;justify-content:center;
+}
+.dc-av{
+  width:66px;height:66px;border-radius:50%;
+  object-fit:cover;border:2.5px solid var(--bd2);
+  background:var(--s3);
+  position:relative;z-index:1;
+}
+.dc-dot{
+  position:absolute;bottom:6px;right:6px;
+  width:16px;height:16px;border-radius:50%;
+  border:3px solid var(--s1);
+  transition:background .4s,box-shadow .4s;
+  z-index:3;
+}
+
+/* info column — لا overflow hidden هنا أبداً */
+.dc-info{flex:1;min-width:0;overflow:visible}
+.dc-name{font-size:17px;font-weight:700;font-family:var(--display);color:var(--t1);line-height:1.2}
+.dc-user{font-size:11px;color:var(--t3);margin-top:2px}
+.dc-status-badge{
+  display:inline-flex;align-items:center;gap:5px;
+  margin-top:7px;font-size:10px;padding:3px 10px;
+  border-radius:99px;
+  background:rgba(88,101,242,.1);border:1px solid rgba(88,101,242,.25);color:#7c8df5
+}
+.dc-badge-dot{width:6px;height:6px;border-radius:50%;display:inline-block;flex-shrink:0}
+
+/* ── Discord Badges — مرئية دائماً ── */
+.dc-badges{
+  display:flex !important;
+  flex-wrap:wrap;
+  gap:6px;
+  margin-top:9px;
+  overflow:visible !important;
+  min-height:22px;
+}
+.dc-badge-icon{
+  display:block !important;
+  width:22px !important;height:22px !important;
+  object-fit:contain;
+  opacity:1 !important;
+  visibility:visible !important;
+  transition:transform .18s, filter .18s;
+  cursor:default;
+  filter:drop-shadow(0 1px 3px rgba(0,0,0,.6));
+}
+.dc-badge-icon:hover{
+  transform:scale(1.4) translateY(-2px);
+  filter:drop-shadow(0 3px 10px rgba(255,255,255,.4));
+}
+
+/* ── Avatar Decoration ── */
+.dc-deco{
+  position:absolute;
+  top:50%;left:50%;
+  transform:translate(-50%,-50%);
+  width:101px;height:101px;
+  pointer-events:none;
+  z-index:2;
+  object-fit:contain;
+}
+
+/* ── Activity ── */
+.dc-act{margin-top:12px;padding:11px 13px;background:var(--s2);border:1px solid var(--bd);border-radius:var(--r3);display:flex;gap:11px;align-items:center}
+.dc-act-img{width:42px;height:42px;border-radius:8px;object-fit:cover;background:var(--s3);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:22px}
+.dc-act-body{min-width:0;flex:1}
+.dc-act-type{font-size:9px;color:var(--t4);text-transform:uppercase;letter-spacing:.1em}
+.dc-act-name{font-size:12px;font-weight:600;color:var(--t1);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dc-act-det{font-size:11px;color:var(--t2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}

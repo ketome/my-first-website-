@@ -1,0 +1,13 @@
+:root{
+  --bg:#07070f;--s1:#0d0d20;--s2:#111128;--s3:#181836;--s4:#202048;
+  --bd:rgba(88,101,242,.13);--bd2:rgba(88,101,242,.3);--bd3:rgba(88,101,242,.55);
+  --t1:#eeeeff;--t2:#8888bb;--t3:#44446a;--t4:#28285a;
+  --acc:#5865f2;--acc2:#ff64a8;--grn:#23e57a;--spt:#1ed760;--stm:#e8813a;
+  --r:18px;--r2:12px;--r3:8px;
+  --mono:'JetBrains Mono',monospace;--display:'Outfit',sans-serif;
+  --shadow:0 24px 60px rgba(0,0,0,.5);--shadow2:0 8px 24px rgba(0,0,0,.35);
+}
+[data-theme="purple"]{--acc:#9d50ff;--bd:rgba(157,80,255,.13);--bd2:rgba(157,80,255,.3)}
+[data-theme="blue"]{--acc:#0080ff;--bd:rgba(0,128,255,.13);--bd2:rgba(0,128,255,.3)}
+[data-theme="green"]{--acc:#00c86e;--bd:rgba(0,200,110,.13);--bd2:rgba(0,200,110,.3)}
+[data-theme="red"]{--acc:#ff4455;--bd:rgba(255,68,85,.13);--bd2:rgba(255,68,85,.3)}

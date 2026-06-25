@@ -1,0 +1,28 @@
+.links-grid{display:flex;flex-direction:column;gap:7px}
+.link-item{display:flex;align-items:center;gap:11px;padding:10px 13px;background:var(--s2);border:1px solid var(--bd);border-radius:var(--r3);color:var(--t2);font-size:12px;font-weight:600;transition:all .22s;position:relative;overflow:hidden;text-decoration:none}
+.link-item:hover{border-color:var(--bd2);color:var(--t1);transform:translateX(4px)}
+.link-icon{width:28px;height:28px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0}
+.link-icon-img{width:18px;height:18px;object-fit:contain;filter:brightness(1.1)}
+.link-label{flex:1}
+.link-arrow{font-size:11px;color:var(--t4);transition:transform .22s}
+.link-item:hover .link-arrow{transform:translateX(4px)}
+
+/* ── Social Circles Row ── */
+.socials-wrap{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;padding:4px 0 8px}
+.social-circle{
+  width:46px;height:46px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  background:rgba(255,255,255,.06);
+  border:1.5px solid rgba(255,255,255,.10);
+  transition:transform .2s, border-color .2s, box-shadow .2s, background .2s;
+  text-decoration:none;
+  flex-shrink:0;
+  position:relative;
+}
+.social-circle img{width:22px;height:22px;object-fit:contain;filter:brightness(1.1)}
+.social-circle:hover{
+  transform:translateY(-4px) scale(1.12);
+  background:color-mix(in srgb, var(--sc-color) 18%, transparent);
+  border-color:var(--sc-color);
+  box-shadow:0 6px 22px color-mix(in srgb, var(--sc-color) 40%, transparent);
+}

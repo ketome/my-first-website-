@@ -1,0 +1,9 @@
+@media(max-width:480px){
+  .panel-body{padding:15px 16px}
+  .dc-name{font-size:15px}
+  .dc-av{width:58px;height:58px}
+  .gh-av{width:62px;height:62px}
+}
+@media(max-width:360px){.stack{gap:7px}.panel-body{padding:13px 14px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@media(hover:none){.link-item:hover{transform:none}}

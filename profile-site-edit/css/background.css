@@ -1,0 +1,25 @@
+.bg-wrap{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.bg-grid{position:absolute;inset:0;
+  background-image:linear-gradient(rgba(88,101,242,.038) 1px,transparent 1px),linear-gradient(90deg,rgba(88,101,242,.038) 1px,transparent 1px);
+  background-size:46px 46px}
+.orb{position:absolute;border-radius:50%;filter:blur(100px);animation:orbFloat 10s ease-in-out infinite}
+.orb1{width:580px;height:580px;top:-190px;left:-140px;background:radial-gradient(circle,rgba(88,101,242,.13),transparent 70%)}
+.orb2{width:460px;height:460px;bottom:-140px;right:-110px;background:radial-gradient(circle,rgba(29,185,84,.09),transparent 70%);animation-delay:-5s}
+.orb3{width:350px;height:350px;top:45%;left:55%;background:radial-gradient(circle,rgba(255,100,168,.06),transparent 70%);animation-delay:-2.5s}
+@keyframes orbFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-24px)}}
+
+/* Custom Background Styles */
+.bg-custom-image{
+  position:absolute;inset:0;
+  background-size:var(--bg-size, cover);
+  background-position:var(--bg-pos, center);
+  background-repeat:no-repeat;
+  transition:opacity .5s ease;
+}
+.bg-custom-image::after{
+  content:'';position:absolute;inset:0;
+  background:rgba(0,0,0,var(--bg-overlay, 0.55));
+}
+.bg-custom-gradient{position:absolute;inset:0}
+.bg-custom-solid{position:absolute;inset:0}
+

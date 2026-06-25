@@ -1,0 +1,12 @@
+{
+  "name": "profile-card",
+  "version": "1.0.0",
+  "description": "Personal profile card with Discord, Spotify, GitHub",
+  "scripts": {
+    "start": "npx serve .",
+    "dev":   "npx live-server --port=3000"
+  },
+  "keywords": ["profile","discord","lanyard","spotify"],
+  "author": "Me",
+  "license": "MIT"
+}

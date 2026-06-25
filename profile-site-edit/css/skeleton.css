@@ -1,0 +1,5 @@
+.sk{background:var(--s3);border-radius:8px;animation:skPulse 1.4s ease infinite}
+.sk-circle{border-radius:50%}
+@keyframes skPulse{0%,100%{opacity:.28}50%{opacity:.75}}
+.sk-row{display:flex;gap:14px;align-items:center}
+.sk-lines{flex:1;display:flex;flex-direction:column;gap:9px}
